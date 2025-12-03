@@ -1038,7 +1038,7 @@ a {
 
 .google-form-wrapper {
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
     background: linear-gradient(135deg, #FFFFFF, #F9FAFB);
     border: 1px solid #E5E7EB;
     box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
@@ -1058,10 +1058,11 @@ a {
 }
 
 .google-form-wrapper iframe {
-    max-width: 100%;
+    width: 100%;
     border: none;
     display: block;
     background: transparent;
+    overflow: hidden;
 }
 
 /* Responsive */
