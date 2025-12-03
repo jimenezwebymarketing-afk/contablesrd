@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- EmailJS SDK (para envío de correos desde el frontend) -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -338,62 +336,15 @@
                         <p><strong>Ubicación:</strong> República Dominicana (servicios para todo el territorio nacional).</p>
                     </div>
                     <p class="contact-note">
-                        El formulario utiliza <strong>EmailJS</strong> para enviar tus datos directamente a nuestro correo.
-                        Así podemos responderte más rápido.
+                        Completa nuestro formulario de contacto y recibimos tu solicitud al instante.
+                        Nos pondremos en contacto contigo lo antes posible.
                     </p>
                 </div>
 
-                <div>
-                    <form id="contact-form" class="card contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="nombre">Nombre completo *</label>
-                                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
-                            </div>
-                            <div class="form-group">
-                                <label for="empresa">Empresa</label>
-                                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa (opcional)">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Correo electrónico *</label>
-                                <input type="email" id="email" name="email" required placeholder="tunombre@empresa.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="telefono">Teléfono / WhatsApp</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="+1 (829) 000-0000">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="servicio">Servicio de interés *</label>
-                            <select id="servicio" name="servicio" required>
-                                <option value="">Selecciona una opción</option>
-                                <option value="Contabilidad general">Contabilidad general</option>
-                                <option value="TSS y SISALRIL">Manejo de TSS y SISALRIL</option>
-                                <option value="Igualas contables">Igualas contables</option>
-                                <option value="Recursos humanos y nómina">Recursos humanos y nómina</option>
-                                <option value="Facturación electrónica">Facturación electrónica</option>
-                                <option value="Otro">Otro servicio</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="mensaje">Cuéntanos sobre tu caso *</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Describe brevemente tu situación actual y cómo podemos ayudarte."></textarea>
-                        </div>
-
-                        <p class="form-note">
-                            Al enviar, tus datos se envían de forma segura y recibimos un correo automático con toda la información.
-                        </p>
-
-                        <button type="submit" class="btn btn-primary full-width" id="contact-submit">
-                            Enviar mensaje
-                        </button>
-                        <p class="form-status" id="form-status" aria-live="polite"></p>
-                    </form>
+                <div class="google-form-container">
+                    <div class="card google-form-wrapper">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiNzjq47R76RsWYSEqskZKLNsHQTW2apzdj7L7RftbkxfFLw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    </div>
                 </div>
             </div>
         </section>
