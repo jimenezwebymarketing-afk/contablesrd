@@ -1058,11 +1058,12 @@ a {
 }
 
 .google-form-wrapper iframe {
-    width: 100%;
-    border: none;
+    width: 100% !important;
+    border: none !important;
     display: block;
     background: transparent;
-    overflow: hidden;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Responsive */
