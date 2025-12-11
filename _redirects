@@ -1,9 +1,6 @@
 # Cloudflare Pages Redirects
 # https://developers.cloudflare.com/pages/platform/redirects
 
-# Redirigir dominio .pages.dev al dominio principal (evita contenido duplicado)
-https://contablesrd.pages.dev/* https://contablesrd.com/:splat 301
-
 # Redirigir /tienda/ al home (página que ya no existe)
 /tienda/* / 301
 /tienda / 301
