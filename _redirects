@@ -1,8 +1,8 @@
 # Cloudflare Pages Redirects
 # https://developers.cloudflare.com/pages/platform/redirects
 
-# Redirigir www a sin www (evita contenido duplicado)
-https://www.contablesrd.com/* https://contablesrd.com/:splat 301
+# NOTA: Redirección www → non-www debe hacerse en Cloudflare Redirect Rules
+# (Pages _redirects no soporta domain-level redirects)
 
 # Redirigir /tienda/ al home (página que ya no existe)
 /tienda/* / 301
