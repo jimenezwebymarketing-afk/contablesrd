@@ -1,0 +1,12 @@
+# Robots.txt para Contables RD
+# https://contablesrd.com
+
+User-agent: *
+Allow: /
+
+# Páginas que no deben indexarse
+Disallow: /gracias.html
+Disallow: /contacto.html
+
+# Sitemap
+Sitemap: https://contablesrd.com/sitemap.xml

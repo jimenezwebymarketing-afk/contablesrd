@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Contables RD - Solicita tu consultoría contable</title>
     <meta name="description" content="Contacta con Contables RD para servicios de contabilidad, TSS, SISALRIL y más. Completa nuestro formulario y recibe una respuesta rápida.">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -24,35 +25,36 @@
                 </div>
             </div>
         </div>
-
-        <div class="nav-wrapper">
-            <div class="container nav">
-                <a href="index.html" class="logo">
-                    <span class="logo-mark">CRD</span>
-                    <div class="logo-text">
-                        <span class="logo-title">Contables RD</span>
-                        <span class="logo-subtitle">Contabilidad &amp; Consultoría</span>
-                    </div>
-                </a>
-
-                <nav class="nav-links" id="main-nav">
-                    <a href="index.html">Inicio</a>
-                    <a href="index.html#servicios">Servicios</a>
-                    <a href="index.html#igualas">Igualas contables</a>
-                    <a href="index.html#facturacion">Facturación electrónica</a>
-                    <a href="index.html#tips">Tips contables</a>
-                    <a href="index.html#nosotros">Nosotros</a>
-                    <a href="contacto.html" class="nav-cta">Contacto</a>
-                </nav>
-
-                <button class="nav-toggle" aria-label="Abrir menú de navegación">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
     </header>
+
+    <div class="nav-wrapper">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">CRD</span>
+                <div class="logo-text">
+                    <span class="logo-title">Contables RD</span>
+                    <span class="logo-subtitle">Contabilidad &amp; Consultoría</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#servicios">Servicios</a>
+                <a href="index.html#igualas">Igualas contables</a>
+                <a href="index.html#facturacion">Facturación electrónica</a>
+                <a href="index.html#tips">Tips contables</a>
+                <a href="index.html#nosotros">Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html" class="nav-cta">Contacto</a>
+            </nav>
+
+            <button class="nav-toggle" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
 
     <main>
         <section class="contact-page-hero">
@@ -79,17 +81,63 @@
                 </div>
 
                 <div class="contact-page-form-wrapper">
-                    <div class="card google-form-wrapper">
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSeiNzjq47R76RsWYSEqskZKLNsHQTW2apzdj7L7RftbkxfFLw/viewform?embedded=true"
-                            width="100%"
-                            height="3000"
-                            frameborder="0"
-                            marginheight="0"
-                            marginwidth="0"
-                            scrolling="no"
-                            style="overflow: hidden; border: none;"
-                        >Cargando…</iframe>
+                    <div class="card contact-form-card">
+                        <form id="contact-form" class="contact-form">
+                            <!-- Web3Forms configuración -->
+                            <input type="hidden" name="access_key" value="2c6a92fd-32a8-4b63-aa55-76568608727f">
+                            <input type="hidden" name="subject" value="Nuevo mensaje de contacto - Contables RD">
+                            <input type="hidden" name="from_name" value="Formulario Contables RD">
+                            <!-- Honeypot anti-spam -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico *</label>
+                                    <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono / WhatsApp</label>
+                                    <input type="tel" id="telefono" name="telefono" placeholder="+1 (809) 000-0000">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="empresa">Nombre de la empresa</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Tu empresa (opcional)">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="servicio">Servicio de interés *</label>
+                                <select id="servicio" name="servicio" required>
+                                    <option value="">Selecciona un servicio</option>
+                                    <option value="Contabilidad General">Contabilidad General</option>
+                                    <option value="Declaración de Impuestos (DGII)">Declaración de Impuestos (DGII)</option>
+                                    <option value="TSS y Nóminas">TSS y Nóminas</option>
+                                    <option value="SISALRIL">SISALRIL</option>
+                                    <option value="Facturación Electrónica">Facturación Electrónica</option>
+                                    <option value="Iguala Contable">Iguala Contable</option>
+                                    <option value="Consultoría Financiera">Consultoría Financiera</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit" id="btn-submit">
+                                <span class="btn-text">Enviar mensaje</span>
+                                <span class="btn-loading">Enviando...</span>
+                            </button>
+                            
+                            <div id="form-message" class="form-message"></div>
+                        </form>
                     </div>
                 </div>
             </div>
