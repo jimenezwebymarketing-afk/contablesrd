@@ -7,6 +7,8 @@ Allow: /
 # Páginas que no deben indexarse
 Disallow: /gracias.html
 Disallow: /contacto.html
+Disallow: /tienda/
+Disallow: /tienda
 
 # Sitemap
 Sitemap: https://contablesrd.com/sitemap.xml

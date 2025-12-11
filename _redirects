@@ -1,0 +1,6 @@
+# Cloudflare Pages Redirects
+# https://developers.cloudflare.com/pages/platform/redirects
+
+# Redirigir /tienda/ al home (página que ya no existe)
+/tienda/* / 301
+/tienda / 301
